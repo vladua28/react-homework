@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import SimpsonsMember from './components/SimpsonsMember';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <>
+          <SimpsonsMember
+        name="Homer Simpson"
+        age={40}
+        sex="Male"
+        src="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"
+          />
+          <SimpsonsMember
+        name="Marge Simpson"
+        age={38}
+        sex="Female"
+        src="https://upload.wikimedia.org/wikipedia/ru/0/0b/Marge_Simpson.png"
+          />
+          <SimpsonsMember
+        name="Bart Simpson"
+        age={36}
+        sex="Male"
+        src="https://upload.wikimedia.org/wikipedia/uk/a/aa/Bart_simpson.png"
+          />
+          <SimpsonsMember
+        name="Lisa Simpson"
+        age={35}
+        sex="Female"
+        src="https://upload.wikimedia.org/wikipedia/ru/e/ec/Lisa_Simpson.png"
+          />
+          <SimpsonsMember
+        name="Maggie Simpson"
+        age={34}
+        sex="Female"
+        src="https://upload.wikimedia.org/wikipedia/ru/9/9d/Maggie_Simpson.png"
+          />
+      </>
   );
-}
+};
 
 export default App;
