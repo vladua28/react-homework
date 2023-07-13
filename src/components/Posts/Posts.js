@@ -1,35 +1,23 @@
-import PostComponent from "./Post/Post";
-import { useEffect, useState } from "react";
+import {Post} from "./Post/Post";
+import {useEffect, useState} from "react";
 
-export const PostContainer = () => {
+export const Posts = () => {
     const [posts, setPosts] = useState([]);
-    const [selectedPostId, setSelectedPostId] = useState(null);
 
     useEffect(() => {
         fetch('https://jsonplaceholder.typicode.com/posts')
-            .then((response) => response.json())
-            .then((posts) => {
-                setPosts(posts);
-            })
-            .catch((error) => {
-                console.log(error);
-            });
-    }, []);
-
-    const showDetails = (postId) => {
-        setSelectedPostId(postId);
-    };
+            .then (value => value.json())
+            .then (value => setPosts(value))
+       }, []);
 
     return (
-        <>
-            {posts.map((post) => (
-                <PostComponent
+        <div>
+            {posts.map(post => (
+                <Post
                     key={post.id}
                     post={post}
-                    showDetails={showDetails}
-                    showFullDetails={selectedPostId === post.id}
                 />
             ))}
-        </>
+        </div>
     );
 };
