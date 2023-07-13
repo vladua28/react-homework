@@ -1,4 +1,3 @@
-// import styles from './Post.module.css';
 import {useState} from "react";
 import {PostDetails} from "./PostDetails";
 

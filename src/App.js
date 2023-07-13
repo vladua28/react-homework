@@ -6,6 +6,6 @@ const App = () => {
       <Posts />
     </>
   );
-} ;
+}
 
 export default App;
