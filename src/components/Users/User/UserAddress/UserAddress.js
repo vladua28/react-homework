@@ -1,11 +1,15 @@
-import React from 'react';
+const UserAddress = ({address}) => {
 
-const UserAddress = () => {
+const {street, suite, city} = address;
+
     return (
         <div>
-            
+            <h3>User Address</h3>
+            <p>Street: {street}</p>
+            <p>Suite: {suite}</p>
+            <p>City: {city}</p>
         </div>
     );
-};
+}
 
-export default UserAddress;
+export {UserAddress};
