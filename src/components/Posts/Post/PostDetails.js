@@ -1,4 +1,4 @@
-export const PostDetails = ({post}) => {
+const PostDetails = ({post}) => {
     const {id, userId, title, body} = post;
     return (
         <div>
@@ -11,3 +11,5 @@ export const PostDetails = ({post}) => {
         </div>
     );
 };
+
+export {PostDetails}
