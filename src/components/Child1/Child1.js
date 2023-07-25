@@ -1,8 +1,12 @@
+import {SubChild1_1} from "./SubChild1_1/SubChild1_1";
+import {SubChild1_2} from "./SubChild1_2/SubChild1_2";
+
 const Child1 = () => {
     return (
-        <div>
-            Child1
-        </div>
+        <>
+            <SubChild1_1/>
+            <SubChild1_2/>
+        </>
     );
 };
 
