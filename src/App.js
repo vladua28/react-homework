@@ -1,7 +1,11 @@
+import {UserContainer} from "./UserContainer/UserContainer";
+
 function App() {
-  return (
-    <>App</>
-  );
+    return (
+        <div>
+            <UserContainer/>
+        </div>
+    );
 }
 
 export {App};
