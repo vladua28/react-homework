@@ -27,4 +27,6 @@ yarn-error.log*
 .pnp.cjs
 .pnp.loader.mjs
 .idea
-/yarn.lock
+yarn.lock
+
+.env
