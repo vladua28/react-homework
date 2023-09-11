@@ -1,7 +1,11 @@
+import {ProductsLayout} from "./components/products/ProductsLayout";
+
 function App() {
-  return (
-    <>App</>
-  );
+    return (
+        <div>
+            <ProductsLayout/>
+        </div>
+    );
 }
 
 export {App};
