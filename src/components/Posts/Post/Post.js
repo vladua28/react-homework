@@ -9,7 +9,8 @@ export const Post = ({post}) => {
         <div>
             <div>id: {id}</div>
             <div>title: {title}</div>
-            <button onClick={() => setIsShow(!isShow)}>
+            {/*<button onClick={() => setIsShow(!isShow)}>{isShow ? 'Hide details' : 'Show details'}</button>*/}
+            <button onClick={() => setIsShow(prevState => !prevState)}>
                 {isShow ? 'Hide details' : 'Show details'}
             </button>
             {isShow && <PostDetails post={post}/>}
